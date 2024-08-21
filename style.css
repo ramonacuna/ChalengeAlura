@@ -1,0 +1,156 @@
+body {
+    background-color:  #F3F5FC ;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body img{
+    width: 7.2rem;
+    height: 5%; 
+    padding: 3%; 
+}
+.main  {
+display: flex;
+justify-content: space-evenly;
+}
+small{
+    color: #495057;
+}
+
+.contenedor_entrada{
+    background-color: #F3F5FC;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+.contenedor_salida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 75vh;
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor_salida img{
+    width: 80%;
+    height: 30%;
+}
+
+.contenedor_salida h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    text-align: center;
+    
+}
+
+.contenedor_salida p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#entrada{
+    height: 60vh;
+    width: 70%;
+    border: none;
+    outline: none;
+}
+
+.cuadros_texto{
+    background-color: #F3F5FC;
+    color: #0A3871;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+}
+
+.cuadros_texto_salida{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif; 
+}
+
+.texto{
+    color: #0A3871;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    margin: 0;
+}
+
+.botones{
+    width: 100%;
+    height: 4rem;
+    padding: 24px;
+    border-radius: 24px;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem
+}
+
+.botones_entrada{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.contenedor_secundario_boton_copiar {
+    background: #FFFFFF;
+    border: 1px solid #0A3871
+}
+.contenedor_primario_boton_encriptar{
+    background:#0A3871;
+    
+}
+.contenedor_primario_boton_desencriptar{
+    background:#D8DFE8 ;
+}
+
+
+@media (max-width: 768px) {
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor_salida{
+        width: 80%;
+        height: 20%;
+    }
+    .cuadros_texto_salida{
+    text-align: center;   
+    }
+    .botones{
+        width: 100%;
+        height: 64px;
+        text-align: center;
+    }
+    .botones_entrada{
+        justify-content: center;
+    }
+
+    .cuadros_texto_salida{
+        width: 80%;
+        height: 20%;
+    }
+}
